@@ -4,8 +4,8 @@
     !include WinMessages.nsh
 
 ; settings
-    Name "Geode"
-    OutFile "geode-installer-win.exe"
+    Name "Crystal Client"
+    OutFile "Crystal-Install-Windows.exe"
     Unicode true
     InstallDir "$PROGRAMFILES32\Steam\steamapps\common\Geometry Dash\" ; set default path to the most common one
     XPStyle on
@@ -71,7 +71,7 @@
 
     !insertmacro MUI_RESERVEFILE_LANGDLL
 
-; random shit
+; random stuff
     ; https://nsis.sourceforge.io/StrReplace
     !define StrRep "!insertmacro StrRep"
     !macro StrRep output string old new
